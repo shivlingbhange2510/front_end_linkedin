@@ -1,9 +1,10 @@
 import React from 'react'
+import { baseUrl } from './config'
 
 export default function Message() {
     const [result, setResult] = React.useState([])
     React.useEffect(() => {
-        fetch(`http://localhost:8001/message`)
+        fetch(`${baseUrl}/message`)
         .then((res) => res.json())
         .then((res) => setResult(res))
     }, [])

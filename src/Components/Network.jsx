@@ -1,12 +1,12 @@
 import React from 'react'
-
+import { baseUrl } from './config'
 export default function Network() {
     const [num, setNum] = React.useState(true)
     const [list, setList] = React.useState([])
     const userdata = JSON.parse(localStorage.getItem("userdata"))
 
     React.useEffect(() => {
-        fetch(`http://localhost:8001/networkdata`)
+        fetch(`${baseUrl}/networkdata`)
             .then((res) => res.json())
             // .then((res) => console.log(res))
             .then((res) => setList(res))
