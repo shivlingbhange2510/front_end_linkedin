@@ -53,7 +53,7 @@ export default function Login({ setlogedin, islogedin }) {
                     // localStorage.setItem("token" , islogedin)
                     navigate("/profile")
                     // window.location.redirect("/home")
-                    window.location.reload();
+                    // window.location.reload();
                 } else {
                     // dispatch(logout())
                     alert("Invalid credantial")
