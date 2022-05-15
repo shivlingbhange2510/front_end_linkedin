@@ -51,7 +51,7 @@ export default function Login({ setlogedin, islogedin }) {
                     alert("You are loged in")
                     // setlogedin(res[0].token)
                     // localStorage.setItem("token" , islogedin)
-                    navigate("/home")
+                    navigate("/profile")
                     // window.location.redirect("/home")
                     window.location.reload();
                 } else {
