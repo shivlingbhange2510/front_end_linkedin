@@ -10,9 +10,9 @@ export default function Body() {
     // const userdata = JSON.parse(localStorage.getItem("userdata"))
     // console.log(userdata)
     // let userdata1=''
-    useEffect(()=>{
-       window.location.reload()
-    },[])
+    // useEffect(()=>{
+    //    window.location.reload()
+    // },[1])
     const [startpost, setstartpost] = React.useState(false)
     function startPost() {
         setstartpost(true)
