@@ -37,6 +37,9 @@ export default function Login({ setlogedin, islogedin }) {
                 // console.log(res)
                 setData(res)
                 console.log('dddd', data)
+                if(data){
+                    console.log('new data ', data, '\n',res)
+                }
                 // if()
                 if(res?.[0]?.token?.length > 1) {
                     // setToken(res[0].token)
@@ -51,8 +54,8 @@ export default function Login({ setlogedin, islogedin }) {
                     // alert("You are loged in")
                     // setlogedin(res[0].token)
                     // localStorage.setItem("token" , islogedin)
-                    navigate("/profile")
-                    // window.location.redirect("/home")
+                    navigate("/home")
+                    window.location.redirect("/home")
                     // window.location.reload();
                 } else {
                     // dispatch(logout())

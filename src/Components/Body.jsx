@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect}from 'react'
 import { Link } from "react-router-dom"
 // import Createpost from "./createpost"
 import "../style.css"
@@ -10,7 +10,9 @@ export default function Body() {
     // const userdata = JSON.parse(localStorage.getItem("userdata"))
     // console.log(userdata)
     // let userdata1=''
-    
+    useEffect(()=>{
+       window.location.reload()
+    },[])
     const [startpost, setstartpost] = React.useState(false)
     function startPost() {
         setstartpost(true)
